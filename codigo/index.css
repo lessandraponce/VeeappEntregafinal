@@ -1,0 +1,241 @@
+.i-phone167-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.i-phone167i-phone167 {
+  width: 100%;
+  height: 852px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 251, 229, 1);
+}
+ 
+.i-phone167-keyboardarrowup {
+  top: 111px;
+  left: 10px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+}
+ 
+.i-phone167-text1 {
+  top: 166px;
+  left: 35px;
+  color: rgba(235, 150, 59, 1);
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Verona-Medium;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.i-phone167-input-field {
+  gap: 8px;
+  top: 335px;
+  left: 39px;
+  width: 272px;
+  display: flex;
+  position: absolute;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.i-phone167-text2 {
+  color: rgba(0, 0, 0, 1);
+  width: 295px;
+  height: auto;
+  font-size: 16px;
+  font-style: Light;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+
+ 
+.i-phone167-button2 {
+  width: 244px; 
+  padding: 12px;
+  background-color: rgba(203, 75, 42, 1);
+  color: #f5f5f5;
+  font-size: 16px;
+  border-radius: 23px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  position: absolute;
+  top: 500px; 
+  left: 63px;  
+}
+
+ 
+.i-phone167-text3 {
+  color: rgba(245, 245, 245, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF Pro;
+  font-weight: 400;
+  line-height: 100%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.i-phone167-group80 {
+  top: 366px;
+  left: 27px;
+  width: 338px;
+  height: 69px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.i-phone167-rectangle8 {
+  top: 0px;
+  left: 0px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle43 {
+  top: 0px;
+  left: 70px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle44 {
+  top: 0px;
+  left: 140px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle45 {
+  top: 0px;
+  left: 210px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle46 {
+  top: 0px;
+  left: 280px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-text4 {
+  top: 451px;
+  left: 17px;
+  color: rgba(0, 0, 0, 0.6899999976158142);
+  width: 294px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: SF Pro;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.i-phone167-text5 {
+  color: rgba(0, 0, 0, 0.6899999976158142);
+  text-decoration: NONE;
+}
+ 
+.i-phone167-link {
+  display: contents;
+}
+ 
+.i-phone167-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.i-phone167-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.i-phone167-text7 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.i-phone167-group80 {
+  display: flex;
+  gap: 12px;  
+  justify-content: space-between;
+  width: 338px; 
+}
+
+.i-phone167-rectangle-input {
+  width: 58px;
+  height: 69px;
+  border-radius: 26px;
+  border: 1px solid #ccc; 
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+  font-family: Inter, sans-serif;
+  background-color: #fff; 
+	
+}
+
+

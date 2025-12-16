@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fan Club</title>
+  <link rel="stylesheet" href="styleclub.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <img src="img/fS1Rwu.jpg" alt="El Principito" />
+  </header>
+
+  <main class="content">
+
+    <span class="tag">#fantasia</span>
+
+    <header class="title-row">
+      <a href="home.html"><span class="back">‹</span></a>
+      <h1>El principito: Fan club</h1>
+    </header>
+
+    <p class="members">12.3K miembros.</p>
+
+    <p class="description">
+      nos encanta el principito! es un super libro y creamos esta
+      comu para todos los lectores de esta gran historia
+    </p>
+
+    <button class="join-btn" id="joinBtn">+ Unirse</button>
+
+    <div class="active-members">
+      <div class="avatars">
+   <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+          <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+           <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+           <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+           <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+          <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+      </div>
+      <span>30 Miembros activos</span>
+    </div>
+
+     <a href="chat.html"><section class="card chat">
+      <div class="card-left">
+        <span class="count">30</span>
+        <small>Usuarios</small>
+      </div>
+   <div class="card-right">
+        <h2>CHATEANDO</h2>
+        <div class="avatars small">
+   <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />          <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+   <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />        </div>
+      </div>
+      <span class="arrow">›</span>
+    </section>  </a>
+
+    <a href= "descripcion_comentarios.html"><section class="card reading">
+      <div class="card-left">
+        <span class="count">20</span>
+        <small>Usuarios</small>
+      </div>
+      <div class="card-right">
+        <h2>LEYENDO</h2>
+        <div class="avatars small">
+   <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />          
+     <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />
+			
+			<img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" />        
+		  </div>
+      </div>
+      <span class="arrow">›</span>
+    </section>
+</a>
+<div class="bottom-nav">
+    <a href="home.html" class="nav-item">       <!-- Aqui va el link del home que hiciste vos -->
+        <span class="material-symbols-outlined">
+home
+</span> 
+        <span>Inicio</span>
+    </a>
+
+    <a href="busqueda.html" class="nav-item">     <!-- Aqui va el link de busqueda que hiciste vos -->
+<span class="material-symbols-outlined">
+search
+</span>
+		<span>Buscar</span>
+    </a>
+
+    <a href="perfil.html" class="nav-item">   
+<span class="material-symbols-outlined">
+person
+</span>
+		<span>Perfil</span>
+    </a>
+
+    <a href="settings.html" class="nav-item">
+<span class="material-symbols-outlined">
+settings
+</span>
+		<span>Ajustes</span>
+    </a>
+</div>
+
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+	  
+	  <script>
+const joinBtn = document.getElementById('joinBtn');
+let joined = false;
+
+
+joinBtn.addEventListener('click', () => {
+joined = !joined;
+if (joined) {
+joinBtn.textContent = '✓ Unido';
+joinBtn.classList.add('joined');
+} else {
+joinBtn.textContent = '➕ Unirse';
+joinBtn.classList.remove('joined');
+}
+});
+</script>
+    
+  </main>
+</body>
+</html>
+
+

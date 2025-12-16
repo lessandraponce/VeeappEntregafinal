@@ -1,0 +1,689 @@
+.bienvenida-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.bienvenida-bienvenida {
+  width: 100%;
+  height: 917px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 251, 229, 1);
+}
+ 
+.bienvenida-text10 {
+  top: 183px;
+  left: 76px;
+  color: rgba(235, 150, 59, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Verona-Medium;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.bienvenida-form-log-in1 {
+  gap: 10px;
+  top: 288px;
+  left: 46px;
+  width: 320px;
+  height: 309px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.bienvenida-form-log-in2 {
+  gap: 24px;
+  display: flex;
+  padding: 24px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: rgba(255, 251, 229, 1);
+}
+ 
+.bienvenida-input-field1 {
+  gap: 8px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.bienvenida-text14 {
+  color: rgba(65, 63, 3, 1);
+  height: auto;
+  font-size: 16px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: left;
+  font-family: Ysabeau Infant;
+  font-weight: 400;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.bienvenida-input1 {
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  padding: 12px 16px;
+  overflow: hidden;
+  font-size: 16px;
+  align-self: stretch;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: rgba(247, 198, 103, 0.5099999904632568);
+}
+ 
+.bienvenida-input-field2 {
+  gap: 8px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.bienvenida-text15 {
+  color: rgba(65, 63, 3, 1);
+  height: auto;
+  font-size: 16px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: left;
+  font-family: Ysabeau Infant;
+  font-weight: 400;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.bienvenida-input2 {
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  padding: 12px 16px;
+  overflow: hidden;
+  font-size: 16px;
+  align-self: stretch;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: rgba(247, 198, 103, 0.5099999904632568);
+}
+ 
+.bienvenida-text-link {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+ 
+.bienvenida-text16 {
+  color: rgba(65, 63, 3, 1);
+  height: auto;
+  text-align: left;
+  line-height: 139.9999976158142%;
+}
+ 
+.bienvenida-button1 {
+  display: flex;
+  z-index: 1;
+  align-items: flex-start;
+}
+ 
+.bienvenida-button2 {
+  gap: 8px;
+  width: 244px;
+  display: flex;
+  padding: 12px;
+  overflow: hidden;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 23px;
+  justify-content: center;
+  background-color: rgba(203, 75, 42, 1);
+}
+ 
+.bienvenida-text17 {
+  color: rgba(245, 245, 245, 1);
+  height: auto;
+  text-align: left;
+  line-height: 100%;
+}
+ 
+.bienvenida-rectangle40 {
+  top: 58px;
+  left: 161px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+}
+ 
+.bienvenida-group5 {
+  top: 637px;
+  left: 52px;
+  width: 308px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.bienvenida-group3 {
+  top: 0px;
+  left: 0px;
+  width: 308px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.bienvenida-text18 {
+  color: rgba(65, 63, 3, 1);
+  width: 176px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ysabeau Infant;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.bienvenida-text19 {
+  left: 179px;
+  color: rgba(65, 63, 3, 1);
+  width: 129px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Ysabeau Infant;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: underline;
+}
+ 
+.bienvenida-link {
+  display: contents;
+}
+ 
+.bienvenida-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.bienvenida-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.bienvenida-text20 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.i-phone167-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.i-phone167i-phone167 {
+  width: 100%;
+  height: 852px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(255, 251, 229, 1);
+}
+ 
+.i-phone167-keyboardarrowup {
+  top: 111px;
+  left: 10px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+}
+ 
+.i-phone167-text1 {
+  top: 166px;
+  left: 35px;
+  color: rgba(235, 150, 59, 1);
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Verona-Medium;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.i-phone167-input-field {
+  gap: 8px;
+  top: 335px;
+  left: 39px;
+  width: 272px;
+  display: flex;
+  position: absolute;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.i-phone167-text2 {
+  color: rgba(0, 0, 0, 1);
+  width: 295px;
+  height: auto;
+  font-size: 16px;
+  font-style: Light;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+
+ 
+.i-phone167-button2 {
+  width: 244px; 
+  padding: 12px;
+  background-color: rgba(203, 75, 42, 1);
+  color: #f5f5f5;
+  font-size: 16px;
+  border-radius: 23px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  position: absolute;
+  top: 500px; 
+  left: 63px;  
+}
+
+ 
+.i-phone167-text3 {
+  color: rgba(245, 245, 245, 1);
+  height: auto;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF Pro;
+  font-weight: 400;
+  line-height: 100%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.i-phone167-group80 {
+  top: 366px;
+  left: 27px;
+  width: 338px;
+  height: 69px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+ 
+.i-phone167-rectangle8 {
+  top: 0px;
+  left: 0px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle43 {
+  top: 0px;
+  left: 70px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle44 {
+  top: 0px;
+  left: 140px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle45 {
+  top: 0px;
+  left: 210px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-rectangle46 {
+  top: 0px;
+  left: 280px;
+  width: 58px;
+  height: 69px;
+  position: absolute;
+  border-radius: 26px;
+}
+ 
+.i-phone167-text4 {
+  top: 451px;
+  left: 17px;
+  color: rgba(0, 0, 0, 0.6899999976158142);
+  width: 294px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: SF Pro;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.i-phone167-text5 {
+  color: rgba(0, 0, 0, 0.6899999976158142);
+  text-decoration: NONE;
+}
+ 
+.i-phone167-link {
+  display: contents;
+}
+ 
+.i-phone167-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.i-phone167-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.i-phone167-text7 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.i-phone167-group80 {
+  display: flex;
+  gap: 12px;  
+  justify-content: space-between;
+  width: 338px; 
+}
+
+.i-phone167-rectangle-input {
+  width: 58px;
+  height: 69px;
+  border-radius: 26px;
+  border: 1px solid #ccc; 
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+  font-family: Inter, sans-serif;
+  background-color: #fff; 
+	
+}
+
+.i-phone166-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CONTENEDOR PRINCIPAL – AHORA USA LAYOUT NORMAL */
+.i-phone166i-phone166 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 251, 229, 1);
+
+  padding-top: 150px;     /* Simula el espacio donde antes estaba el título */
+  padding-bottom: 40px;   /* Espacio inferior */
+}
+
+/* FLECHA (si quieres dejarla donde estaba, mantenemos absolute) */
+.i-phone166-keyboardarrowup {
+  position: absolute;
+  top: 111px;
+  left: 10px;
+  width: 31px;
+  height: 31px;
+}
+
+/* TÍTULO – AHORA SEGÚN EL FLUJO */
+.i-phone166-text1 {
+  color: rgba(235, 150, 59, 1);
+  font-size: 30px;
+  font-family: Verona-Medium;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* LABEL */
+.i-phone166-input-field {
+  gap: 8px;
+  width: 272px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.i-phone166-text2 {
+  color: rgba(100, 47, 55, 1);
+  font-size: 16px;
+  font-family: SF Pro;
+  font-weight: 300;
+}
+
+/* CAMPO DE TEXTO */
+.i-phone166-text-field {
+  width: 318px;
+  height: 36px;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.i-phone166-contents {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.i-phone166-frame-separator {
+  width: 286px;
+  height: 1px;
+  border-top: 1px solid rgba(100, 47, 55, 0.51);
+}
+
+.i-phone166-text3 {
+  color: rgba(100, 47, 55, 0.52);
+  font-size: 17px;
+  font-family: SF Pro;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* TEXTO DESCRIPTIVO */
+.i-phone166-text5 {
+  color: rgba(0, 0, 0, 0.43);
+  width: 343px;
+  font-size: 13px;
+  font-family: SF Pro;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN 1 (vacío) – AHORA EN EL FLUJO */
+.i-phone166-button1 {
+  width: 244px;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px auto 0 auto;
+}
+
+/* BOTÓN “CONTINUAR” ABAJO */
+.i-phone166-button2 {
+  gap: 8px;
+  width: 244px;
+  display: flex;
+  padding: 12px;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 23px;
+  justify-content: center;
+  background-color: rgba(203, 75, 42, 1);
+
+  margin: 20px auto;
+}
+
+.i-phone166-text4 {
+  color: rgba(245, 245, 245, 1);
+  font-size: 16px;
+  font-family: SF Pro;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* DEJO ESTOS IGUAL (no afectan el layout principal) */
+.i-phone166-link {
+  display: contents;
+}
+
+.i-phone166-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+
+.i-phone166-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+
+.i-phone166-text6 {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+
+.bienvenida-input1 {
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  padding: 12px 16px;
+  overflow: hidden;
+  font-size: 16px;
+  align-self: stretch;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: rgba(247, 198, 103, 0.5099999904632568);
+}

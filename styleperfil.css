@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: Outfit;
+    background: #FFF7DF;
+    color: #3a3a3a;
+	    padding-bottom: 120px;
+
+}
+
+.header {
+	font-family: Playfair;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px;
+    color: #D87347;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #D87347;
+}
+
+.profile-card {
+	font-family: Outfit;
+    background: #F3E7C5;
+    width: 85%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.lib-btn {
+    position: absolute;
+    top: 55px;                /* debajo del botón Editar */
+    right: 15px;
+    background: #F6C988;      /* color suave que encaja con la tarjeta */
+    padding: 6px 15px;
+    border-radius: 12px;
+    color: #6B2C13;           /* marrón suave igual que tus textos */
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+
+
+
+
+.avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.profile-info h3 {
+	font-family: Outfit;
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.lbl {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #6b6a6a;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.tag {
+    background: #e0e0ff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.tag:nth-child(2) {
+    background: #ffd0d0;
+}
+
+.edit-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #E57C64;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.bio {
+	font-family: Outfit;
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: white;
+    font-size: 13px;
+    resize: none;
+    height: 40px;
+}
+
+.subtitle {
+	font-family: Outfit;
+    width: 85%;
+    margin: 20px auto 10px;
+    font-size: 18px;
+}
+
+.carousel {
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 10px 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.book {
+    width: 130px;
+    height: 190px;
+    border-radius: 12px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.community-card {
+    width: 85%;
+    margin: 0 auto 40px;
+}
+
+.community-card h4 {
+	font-family: Playfair;
+    color: #E57C64;
+    font-size: 20px;
+    text-align: center;
+}
+
+.community-box {
+    background: #FAD8A6;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.comm-img {
+    width: 90px;
+    border-radius: 12px;
+}
+
+.comm-text h3 {
+	font-family: Playfair;
+    margin: 0;
+    font-size: 20px;
+}
+
+.comm-text p {
+	font-family: Outfit;
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.join-btn {
+    margin-left: auto;
+    background: #D9D9D9;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* --- BOTTOM NAVBAR --- */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;               /* distancia desde abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #e89230;        /* color de tu barra */
+    padding: 15px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* --- LINKS DEL NAV --- */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* --- ICONOS DEL NAV --- */
+.nav-item i {
+    font-size: 32px;
+    margin-bottom: 5px;
+}

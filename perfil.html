@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styleperfil.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+
+    <header class="header">
+		<a href="home.html" class="back-btn">
+        <button class="back-btn material-symbols-outlined">arrow_back</button>
+			  </a>
+
+        <h2>Perfil</h2>
+    </header>
+
+   <section class="profile-card">
+    <img src="img/pfp.jpg" class="avatar" alt="avatar">
+
+    <div class="profile-info">
+        <h3>Juan Carlos</h3>
+        <p>Libros leídos: 123</p>
+        <p class="lbl">géneros favoritos:</p>
+
+        <div class="tags">
+            <button class="tag">#fantasía</button>
+            <button class="tag">#terror</button>
+        </div>
+    </div>
+    
+    <!-- HERE is the edit button as an <a> link -->
+	   
+    <a href="editarcuenta.html" class="edit-btn">Editar perfil</a>
+	   
+	       <a href="libreria.html" class="lib-btn">Librería personal</a>
+
+
+    <textarea class="bio" placeholder="Me encanta la magia y el pan."></textarea>
+</section>
+
+
+    <h3 class="subtitle">Libros favoritos</h3>
+
+    <section class="carousel">
+        <img src="img/el principito.jpeg" class="book">
+        <img src="img/alicia.jpeg" class="book">
+        <img src="img/elenorandpark.jpeg" class="book">
+    </section>
+
+    <section class="community-card">
+        <h4>COMUNIDADES</h4>
+
+        <div class="community-box">
+            <img src="img/el principito.jpeg" class="comm-img">
+
+            <div class="comm-text">
+                <h3>EL PRINCIPITO FAN CLUB</h3>
+                <p>Somos fans de El Principito, está bien guapote uy.</p>
+            </div>
+
+            <button class="join-btn">Unido</button>
+        </div>
+    </section>
+	
+	
+	    <!-- Aqui el coso de la barra  -->
+
+	<div class="bottom-nav">
+    <a href="home.html" class="nav-item">       <!-- Aqui va el link del home que hiciste vos -->
+        <span class="material-symbols-outlined">
+home
+</span> 
+        <span>Inicio</span>
+    </a>
+
+    <a href="busqueda.html" class="nav-item">     <!-- Aqui va el link de busqueda que hiciste vos -->
+<span class="material-symbols-outlined">
+search
+</span>
+		<span>Buscar</span>
+    </a>
+
+    <a href="home.html" class="nav-item">   
+<span class="material-symbols-outlined">
+person
+</span>
+		<span>Perfil</span>
+    </a>
+
+    <a href="settings.html" class="nav-item">
+<span class="material-symbols-outlined">
+settings
+</span>
+		<span>Ajustes</span>
+    </a>
+</div>
+
+    <!-- JS para botones -->
+    <script>
+        document.querySelector(".back-btn").addEventListener("click", () => {
+            alert("Regresando…");
+        });
+
+        document.querySelector(".edit-btn").addEventListener("click", () => {
+            alert("Editar perfil");
+        });
+
+        document.querySelectorAll(".tag").forEach(tag => {
+            tag.addEventListener("click", () => {
+                alert("Tag: " + tag.textContent);
+            });
+        });
+
+        document.querySelector(".join-btn").addEventListener("click", () => {
+            alert("Ya eres parte del club :)");
+        });
+    </script>
+
+</body>
+</html>
+

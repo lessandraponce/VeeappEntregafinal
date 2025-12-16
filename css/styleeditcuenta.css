@@ -1,0 +1,204 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+</style>
+
+
+body {
+    background: #fff7e6; 
+    font-family: Outfit;
+    padding: 0 15px;
+}
+
+/* --- HEADER --- */
+.encabezado {
+	font-family: Playfair;
+	font-color: #CC4C2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 200px;
+	padding-left: 10px;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    color: #c65c2e;
+}
+
+/* --- TARJETA PERFIL --- */
+.card-perfil {
+    background: #DBCBD0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-family: Outfit;
+}
+
+.card-perfil .avatar {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.btn-group-acciones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-switch {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-cambiar {
+    background: #CC4C2B;
+}
+
+.btn-cerrar {
+    background: #CC4C2B;
+}
+
+/* --- INFO BOX --- */
+.info-box {
+    background: #DBCBD0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+	margin-left:15px ;
+	margin-right:15px;
+}
+
+.info-box label {
+    font-size: 14px;
+    color: #4c4448;
+}
+
+.info-box input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #f1e8ee;
+	font-family: Outfit;
+}
+
+/* --- PUBLICACIONES --- */
+.pub-box {
+    background: transparent;
+    margin-top: 20px;
+	margin-left:15px;
+	margin-right: 15px;
+	font-family: Playfair;
+}
+
+.pub-box h3 {
+    color: #c65c2e;
+    margin-left: 5px;
+}
+
+.plus-container {
+    background: #DBCBD0;
+    border-radius: 20px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-container span {
+    font-size: 50px;
+    color: #b5848d;
+}
+
+/* --- OFFCANVAS --- */
+.themed-offcanvas {
+    background: #f4d7ac;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.themed-offcanvas .offcanvas-title {
+    color: #c65c2e;
+    font-weight: bold;
+	font-family: Outfit;
+}
+
+.account-option {
+    background: #f7e8d7;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.account-option .small-pfp {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.account-option .info p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.selected-account {
+    border: 2px solid #c65c2e;
+    position: relative;
+}
+
+.check-icon {
+    margin-left: auto;
+    color: #c65c2e;
+    font-size: 26px;
+}
+
+/* --- MODAL --- */
+.modal-themed {
+    background: #f4d7ac;
+    border-radius: 20px;
+	font-family: Outfit;
+}
+
+.modal-btn {
+    border-radius: 10px;
+}
+
+#modalCerrarSesion .btn-secondary {
+    background-color: #F47A24;
+    border: none;
+    color: white;
+}
+
+#modalCerrarSesion .btn-secondary:hover {
+    background-color: #c65c2e;
+}
+
+#modalCerrarSesion .btn-primary {
+    background-color: #c65c2e;
+    border: none;
+    color: white;
+}
+
+#modalCerrarSesion .btn-primary:hover {
+    background-color: #a6481f;
+}
+
+.plus-link {
+    text-decoration: none;
+    color: inherit;
+}
+

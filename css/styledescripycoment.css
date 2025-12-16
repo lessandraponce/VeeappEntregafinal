@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+body{
+  background:#fff7df;
+  font-family:Outfit;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px;
+font-family: Playfair;
+}
+
+/* LIBRO */
+.book-card{
+  display:flex;
+  gap:14px;
+  padding:12px;
+  background:#fff2d6;
+  border-radius:18px;
+  margin:10px;
+}
+
+.book-cover{
+  width:90px;
+  border-radius:12px;
+}
+
+.book-info p{
+  margin:4px 0;
+}
+
+.stars{
+  color:#e67e22;
+}
+
+.tag{
+  background:#e6c3f2;
+  padding:4px 10px;
+  border-radius:14px;
+  font-size:12px;
+}
+
+/* TABS */
+.tab{
+  display:flex;
+  gap:10px;
+  padding:10px;
+}
+
+.tab button{
+  border:none;
+  padding:8px 14px;
+  border-radius:20px;
+  background:#f4d7a7;
+}
+
+.tab button.active{
+  background:#e8743c;
+  color:#fff;
+}
+
+.tabcontent{
+  padding:10px;
+}
+
+/* DESCRIPCIÓN */
+.box{
+  background:#e7c5e6;
+  border-radius:12px;
+  padding:12px;
+}
+
+/* COMENTARIOS */
+.comment{
+  border-radius:14px;
+  padding:12px;
+  margin-bottom:10px;
+}
+
+.purple{ background:#d9b6db; }
+.yellow{ background:#f7d48b; }
+
+.avatar{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.comment-img{
+  width:100%;
+  border-radius:12px;
+  margin-top:8px;
+}
+
+.username{
+  font-weight:bold;
+  text-decoration:none;
+  color:#000;
+}
+
+.dots{
+  background:none;
+  border:none;
+}
+
+.edit-modal .modal-body{
+  background:#fff7df;
+}
+
+.edit-modal textarea{
+  resize:none;
+  border-radius:12px;
+}
+
+.offcanvas{
+    background: #f4d7ac;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.offcanvas-header {
+    color: #c65c2e;
+    font-weight: bold;
+	font-family: Outfit;
+}
+
+#postOptions .btn-primary {
+    background-color: #F7C667;
+    border: none;
+    color: #642F37;
+}
+
+.modal-content{
+    background: #f4d7ac;
+    border-radius: 20px;
+	font-family: Outfit;
+}
+
+#reportModal .btn-secondary {
+    background-color: #F47A24;
+    border: none;
+    color: white;
+}
+
+#reportModal  .btn-primary {
+    background-color: #c65c2e;
+    border: none;
+    color: white;
+}
+
+
+/* SWITCH TABS */
+.tab-switch{
+  display:flex;
+  background:#f6b98a;
+  border-radius:999px;
+  padding:2px;        
+  margin:12px;
+}
+
+.tab-switch button{
+  flex:1;
+  border:none;
+  background:transparent;
+  padding:6px 0;        
+  border-radius:999px;
+  font-size:15px;       
+  line-height:1;        
+  color:#7a3a1a;
+  transition:all .25s ease;
+}
+
+.tab-switch button.active{
+  background:#d4552a;
+  color:#fff;
+  font-weight:600;
+}
+
+.comment-stars{
+  font-size:14px;
+  color:#f39c12;
+}
+
+.comment-stars.red{
+  color:#c0392b;
+}
+
+.comment-input{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px;
+  background:#fde7b0;
+  border-radius:16px;
+  margin-top:10px;
+}
+
+.comment-input input{
+  flex:1;
+  border:none;
+  border-radius:14px;
+  padding:6px 10px;
+}
+
+.send-btn,.img-btn{
+  background:#e8743c;
+  border:none;
+  color:white;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+}
+
+.reply-btn{
+  background:none;
+  border:none;
+  font-size:13px;
+  color:#6b3a1a;
+}
+
+.reply-box{
+  display:flex;
+  gap:6px;
+  margin-top:8px;
+  background:#e7c5e6;       
+  padding:6px;
+  border-radius:12px;
+}
+
+.reply-box input{
+  flex:1;
+  border:none;
+  border-radius:10px;
+  padding:6px 10px;
+  font-size:13px;
+  outline:none;
+}
+
+.reply-box button{
+  border:none;
+  background:#d4552a;
+  color:#fff;
+  border-radius:10px;
+  padding:6px 12px;
+  font-size:13px;
+}
+
+
+.inner-comment{
+  display:flex;
+  gap:8px;
+  background:#fff3cf;
+  padding:6px;
+  border-radius:10px;
+  margin-top:6px;
+}
+
+.comment-input{
+  position: fixed;
+  bottom: 10px;             
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(100% - 24px);  
+  max-width: 480px;          
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px;
+  background: #fde7b0;
+  border-radius: 16px;
+
+  z-index: 1000;             
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+#comments{
+  padding-bottom: 90px; 
+}
+
+.view-comments{
+  background:none;
+  border:none;
+  padding:0;
+  margin-top:8px;
+
+  font-size:13px;
+  color:#b95b2b;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+
+.username-link{
+  text-decoration:none;
+  color:inherit;
+}
+
+.username-link:hover{
+  text-decoration:underline; 
+}
+
+
+/* pancitouwu el mejor lol*/

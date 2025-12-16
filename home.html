@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Página simplificada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylehome.css">
+  <link rel="stylesheet" href="index.css">
+	
+	  <link href="img/favicon.png" rel="shortcut icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <title>Vee App</title>
+</head>
+<body>
+	
+		<div class="bottom-nav">
+    <a href="libros.html" class="nav-item">       <!-- Aqui va el link del home que hiciste vos -->
+        <span class="material-symbols-outlined">
+home
+</span> 
+        <span>Inicio</span>
+    </a>
+
+    <a href="busqueda.html" class="nav-item">     <!-- Aqui va el link de busqueda que hiciste vos -->
+<span class="material-symbols-outlined">
+search
+</span>
+		<span>Buscar</span>
+    </a>
+
+    <a href="perfil.html" class="nav-item">   
+<span class="material-symbols-outlined">
+person
+</span>
+		<span>Perfil</span>
+    </a>
+
+    <a href="settings.html" class="nav-item">
+<span class="material-symbols-outlined">
+settings
+</span>
+		<span>Ajustes</span>
+    </a>
+</div>
+	
+<header class="topbar">
+<nav class="navbar fixed-top vee-nav">
+  <div class="container-fluid nav-inner">
+
+    <!-- Avatar -->
+    <img src="img/photo-1438761681033-6461ffad8d80 (1).jpg" class="vee-avatar" alt="avatar">
+
+    <!-- Logo -->
+    <span class="vee-logo">Vee</span>
+
+    <!-- Botón menú -->
+    <button class="navbar-toggler vee-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="vee-menu-icon">☰</span>
+    </button>
+
+    <!-- Menú Offcanvas -->
+    <div class="offcanvas offcanvas-end vee-offcanvas" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+
+        <!-- Search igual a la imagen -->
+        <form class="search-bar" role="search">
+			<a href="busqueda.html" class="nav-item">
+          <input type="text" placeholder="Buscar" />
+          <span class="search-icon">🔍</span>
+       </a> </form>
+
+        <!-- Links -->
+        <ul class="navbar-nav mt-3">
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Mi cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="settings.html">configurar</a>
+          </li>
+			 <li class="nav-item">
+            <a class="nav-link" href="notificaciones.html">notificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Cerrar sesion</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+	</header>
+
+
+<div class="search-box">
+</div>
+
+
+<section class="section-title">RECOMENDADOS</section>
+
+
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <div class="card-slide">
+        <img src="img/harry-potter-features.jpg" class="slide-img">
+
+        <div class="slide-content">
+          <h2>Harry Potter<br>COLLECTION</h2>
+          <p>Sigue las flipantes aventuras del niño de los lentes feos y sus amigos autistas :0000</p>
+          <span class="stars">★★★★★</span>
+
+          <a href="descripcion_comentarios.html"><button class="read-btn">Leer</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <div class="card-slide">
+        <img src="img/oso-polar-definicion-genero-de-la-fantasia.webp" class="slide-img">
+
+        <div class="slide-content">
+          <h2>SCI-FI<br>COLLECTION</h2>
+          <p>Aventuras espaciales, naves y más cosas bizarras uwu</p>
+          <span class="stars">★★★★★</span>
+
+       <a href="descripcion_comentarios.html"><button class="read-btn">Leer</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+
+
+
+<section class="section-title">CATEGORÍAS</section>
+
+
+<a href="busqueda.html"><div class="category terror">TERROR</div></a>
+<a href="busqueda.html"><div class="category fantasia">FANTASIA</div></a>
+<a href="busqueda.html"><div class="category scifi">SCI-FI</div></a>
+
+
+<button class="more-btn">Ver más</button>
+
+
+<section class="section-title">COMUNIDAD</section>
+
+
+<div class="community-card">
+<img src="img/61NGp-UxolL._AC_UF1000,1000_QL80_.jpg" alt="principe" />
+<div>
+<h3>EL PRINCIPITO FAN CLUB</h3>
+<p>Somos fans del Principito, está bien guapote uy.</p>
+<a href="club.html"><button class="join-btn">Unirse</button></a>
+</div>
+</div>
+
+
+<div class="community-card">
+<img src="img/edgar-allan-poe.png" alt="allan" />
+<div>
+<h3>Edgar Allan Poe Simps Club</h3>
+<p>Somos los simps del Edgar, está bien guapote uy.</p>
+<a href="club.html"><button class="join-btn">Unirse</button></a>
+</div>
+</div>
+
+
+<div class="community-card">
+<img src="img/edgar-allan-poe.png" alt="allan" />
+<div>
+<h3>Edgar Allan Poe Simps Club</h3>
+<p>Somos los simps del Edgar, está bien guapote uy.</p>
+<a href="club.html"><button class="join-btn">Unirse</button></a>
+</div>
+</div>
+
+<!-- Bootstrap JS (Bundle con Popper, NECESARIO para el carrusel) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	
+</body>
+</html>

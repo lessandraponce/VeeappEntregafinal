@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    font-family: Outfit;
+    background: #FFF7DF;
+    color: #3a3a3a;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    color: #E57C64;
+    font-weight: bold;
+	font-family: Playfair ;
+}
+
+.back {
+    text-decoration: none;
+    color: #E57C64;
+    font-size: 20px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #D87347;
+}
+
+/* NOTIFICATIONS */
+.notifications {
+    padding: 10px;
+}
+
+.notification {
+    background: #F3E7C5;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* AVATAR */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* TEXT */
+.notification p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* USER LINK */
+.user {
+    font-weight: bold;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+.user:hover {
+    text-decoration: underline;
+}

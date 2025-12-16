@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Página simplificada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylebusqueda.css">
+  <link rel="stylesheet" href="index.css">
+	
+	  <link href="img/favicon.png" rel="shortcut icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <title>Vee App</title>
+</head>
+
+	
+	<body>
+		
+		<!-- Aqui el coso de la barra  -->
+
+	<div class="bottom-nav">
+    <a href="home.html" class="nav-item">       <!-- Aqui va el link del home que hiciste vos -->
+        <span class="material-symbols-outlined">
+home
+</span> 
+        <span>Inicio</span>
+    </a>
+
+    <a href="busqueda.html" class="nav-item">     <!-- Aqui va el link de busqueda que hiciste vos -->
+<span class="material-symbols-outlined">
+search
+</span>
+		<span>Buscar</span>
+    </a>
+
+    <a href="perfil.html" class="nav-item">   
+<span class="material-symbols-outlined">
+person
+</span>
+		<span>Perfil</span>
+    </a>
+
+    <a href="settings.html" class="nav-item">
+<span class="material-symbols-outlined">
+settings
+</span>
+		<span>Ajustes</span>
+    </a>
+</div>
+		
+<div class="container">
+ <header class="header">
+	 <a href="home.html" class="back-btn">
+        <span class="material-symbols-outlined">arrow_back</span>
+    </a>
+
+<h1>CATEGORÍAS</h1>
+</header>
+
+<div class="search-box">
+<input type="text" placeholder="Search" />
+</div>
+
+
+<div class="tags">
+<div class="tag">Fantasia</div>
+<div class="tag">Terror</div>
+<div class="tag">Sci-fi</div>
+<div class="tag">Romance</div>
+</div>
+
+<h2 class="section-title">FANTASIA</h2>
+<div class="separator"></div>
+
+
+<div class="book-carousel" id="carousel">
+<a href="descripcion_comentarios.html" class="book-link">
+  <div class="book-card">
+    <img src="img/61NGp-UxolL._AC_UF1000,1000_QL80_.jpg" alt="El Principito" />
+    <h3>El Principito</h3>
+    <p>Antoine de Saint-Exupéry</p>
+    <span class="tag">#fantasia</span>
+  </div>
+</a>
+
+
+
+<div class="book-card">
+<img src="img/alicia.jpeg" alt="alice"/>
+<h3>Alicia en el país...</h3>
+<p>Lewis Carroll</p>
+<span class="tag">#fantasia</span>
+</div>
+
+
+<div class="book-card">
+<img src="img/alicia.jpeg" alt="alice"/>
+<h3>Alicia en el país...</h3>
+<p>Lewis Carroll</p>
+<span class="tag">#fantasia</span>
+</div>
+</div>
+
+	
+	
+<h2 class="section-title">TERROR</h2>
+<div class="separator"></div>
+
+
+<div class="book-carousel">
+<div class="book-card">
+<img src="img/61NGp-UxolL._AC_UF1000,1000_QL80_.jpg" alt="principe" />
+<h3>El Principito</h3>
+<p>Antoine de Saint-Exupéry</p>
+<span class="tag">#terror</span>
+</div>
+
+
+<div class="book-card">
+<img src="img/alicia.jpeg" alt="alice"/>
+<h3>Alicia en el país...</h3>
+<p>Lewis Carroll</p>
+<span class="tag">#terror</span>
+</div>
+
+
+<div class="book-card">
+<img src="img/alicia.jpeg" alt="alice"/>
+<h3>Alicia en el país...</h3>
+<p>Lewis Carroll</p>
+<span class="tag">#terror</span>
+</div>
+</div>	
+	
+	
+
+<h2 class="section-title">SCI-FI</h2>
+<div class="separator"></div>
+
+
+<div class="book-carousel" >
+<div class="book-card">
+<img src="img/61NGp-UxolL._AC_UF1000,1000_QL80_.jpg" alt="principe" />
+<h3>El Principito</h3>
+<p>Antoine de Saint-Exupéry</p>
+<span class="tag">#sci-fi</span>
+</div>
+
+
+<div class="book-card">
+<img src="img/alicia.jpeg" alt="alice"/>
+<h3>Alicia en el país...</h3>
+<p>Lewis Carroll</p>
+<span class="tag">#sci-fi</span>
+</div>
+
+
+<div class="book-card">
+<img src="img/alicia.jpeg" alt="alice"/>
+<h3>Alicia en el país...</h3>
+<p>Lewis Carroll</p>
+<span class="tag">#sci-fi</span>
+</div>
+</div>	
+	
+	<script>
+const carousel = document.getElementById("carousel");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+
+carousel.addEventListener("mousedown", e => {
+isDown = true;
+carousel.classList.add("active");
+startX = e.pageX - carousel.offsetLeft;
+scrollLeft = carousel.scrollLeft;
+});
+
+
+carousel.addEventListener("mouseleave", () => {
+isDown = false;
+carousel.classList.remove("active");
+});
+
+
+carousel.addEventListener("mouseup", () => {
+isDown = false;
+carousel.classList.remove("active");
+});
+
+
+carousel.addEventListener("mousemove", e => {
+if (!isDown) return;
+e.preventDefault();
+const x = e.pageX - carousel.offsetLeft;
+const walk = (x - startX) * 2;
+carousel.scrollLeft = scrollLeft - walk;
+});
+
+
+// touch support
+carousel.addEventListener("touchstart", e => {
+isDown = true;
+startX = e.touches[0].pageX - carousel.offsetLeft;
+scrollLeft = carousel.scrollLeft;
+});
+
+
+carousel.addEventListener("touchend", () => (isDown = false));
+
+
+carousel.addEventListener("touchmove", e => {
+if (!isDown) return;
+const x = e.touches[0].pageX - carousel.offsetLeft;
+const walk = (x - startX) * 2;
+carousel.scrollLeft = scrollLeft - walk;
+});
+</script>
+	
+	
+</body>
+</html>

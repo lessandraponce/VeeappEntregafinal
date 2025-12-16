@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Libro</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styledescripycoment.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+
+<header class="header">
+  <span class="material-symbols-outlined back-btn" onclick="history.back()">arrow_back</span>
+</header>
+
+<section class="book-card">
+  <img src="img/el principito.jpeg" class="book-cover">
+
+  <div class="book-info">
+    <h3>El Principito</h3>
+
+    <p> Antoine de Saint-Exupéry</p>
+    <p> Año de publicación: 1943</p>
+
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+
+    <span class="tag">Fantasía</span>
+  </div>
+</section>
+
+<div class="tab-switch">
+  <button class="tablinks active" onclick="tabsFunction(event,'desc')">
+    Descripción
+  </button>
+  <button class="tablinks" onclick="tabsFunction(event,'comments')">
+    Comentarios
+  </button>
+</div>
+
+
+<div id="desc" class="tabcontent" style="display:block">
+  <p class="box">
+    El Principito narra el encuentro de un aviador con un niño proveniente de otro planeta,
+    explorando temas como la amistad, el amor y la importancia de lo esencial. El Principito narra el encuentro entre un aviador varado en el desierto del Sahara y un pequeño príncipe de otro asteroide (B-612) que emprende un viaje por el universo, descubriendo la extraña lógica adulta y aprendiendo sobre la amistad, el amor y la importancia de lo esencial a través de sus encuentros con personajes solitarios y sus reflexiones sobre una rosa vanidosa que dejó atrás, culminando en la Tierra con la lección del zorro sobre la domesticación y la amistad verdadera, y el sacrificio del niño para regresar a casa, dejando al aviador con una perspectiva infantil renovada.
+  </p>
+</div>
+
+<div id="comments" class="tabcontent">
+
+  <div class="comment purple">
+    <div class="row align-items-center">
+
+      <div class="col-auto">
+        <img src="img/Hiii.jpeg" class="avatar">
+      </div>
+
+      <div class="col">
+        <a href="perfil_tercera_persona.html" class="username">Pancitouwu</a><br>
+		  <div class="comment-stars">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+</div>
+
+		  
+        <small>Feb 22, 2025</small>
+      </div>
+		
+		
+
+      <div class="col-auto">
+       <button class="btn dots"
+  data-bs-toggle="modal"
+  data-bs-target="#reportModal">
+  <i class="fa-solid fa-ellipsis-vertical"></i>
+</button>
+
+
+      </div>
+    </div>
+
+    <p class="mt-2">Buen libro, me gustó que es para todo público.</p>
+	  
+	  <button class="reply-btn" onclick="toggleReply(this)">
+  <i class="fa-regular fa-comment"></i> Responder
+</button>
+
+<div class="reply-box d-none">
+  <input type="text" placeholder="Escribe una respuesta...">
+  <button onclick="sendReply(this)">Enviar</button>
+</div>
+
+	  
+  </div>
+
+  <div class="comment yellow" id="myPost">
+    <div class="row align-items-center">
+
+      <div class="col-auto">
+        <img src="img/pfp.jpg" class="avatar">
+      </div>
+
+      <div class="col">
+        <strong>Tú</strong><br>
+		  <div class="comment-stars red">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+</div>
+
+        <small>Hace 1 min</small>
+      </div>
+
+      <div class="col-auto">
+        <button class="btn dots" data-bs-toggle="offcanvas" data-bs-target="#postOptions">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+      </div>
+    </div>
+
+    <p id="postText" class="mt-2">Me encanta este librooo</p>
+
+    <img src="img/el principito.jpeg" class="comment-img">
+	  
+	  <button class="view-comments"
+  data-bs-toggle="collapse"
+  data-bs-target="#innerComments">
+  <i class="fa-regular fa-comment"></i> Ver comentarios
+</button>
+
+<div class="collapse" id="innerComments">
+  <div class="inner-comment">
+    <img src="img/Hiii.jpeg" class="avatar">
+    <div>
+<a href="perfil_tercera_persona.html" class="username-link">
+  <strong>Pancitouwu</strong>
+</a>
+
+      <p>La foto se ve hermosa ✨</p>
+    </div>
+  </div>
+
+  <div class="inner-comment">
+    <img src="img/pfp.jpg" class="avatar">
+    <div>
+      <strong>Tú</strong>
+      <p>Gracias!! 💛</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+	
+</div>
+	
+<div class="comment-input">
+  <button class="img-btn">
+    <i class="fa-regular fa-image"></i>
+  </button>
+
+  <input type="text" id="newCommentText" placeholder="Escribe un comentario...">
+
+  <button class="send-btn" onclick="sendComment()">
+    <i class="fa-solid fa-paper-plane"></i>
+  </button>
+</div>
+
+
+<!-- MODAL DENUNCIAR UUY -->
+<div class="modal fade" id="reportModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">¿Denunciar el comentario?</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-danger" data-bs-dismiss="modal">Denunciar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="postOptions">
+  <div class="offcanvas-header">
+    <h5>Opciones</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <button class="btn btn-primary w-100 mb-2" onclick="editPost()">
+      <i class="fa-solid fa-pen"></i> Editar publicación
+    </button>
+    <button class="btn btn-danger w-100" onclick="deletePost()">
+      <i class="fa-solid fa-trash"></i> Eliminar publicación
+    </button>
+  </div>
+</div>
+	
+<div class="modal fade" id="editModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content edit-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Editar comentario</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="comment yellow">
+          <div class="row align-items-center mb-2">
+            <div class="col-auto">
+              <img src="imgs/yo.jpg" class="avatar">
+            </div>
+            <div class="col">
+              <strong>Tú</strong><br>
+              <small>Editando…</small>
+            </div>
+          </div>
+
+          <textarea id="editText" class="form-control" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Cancelar
+        </button>
+        <button class="btn btn-primary" onclick="saveEdit()">
+          Publicar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function tabsFunction(evt, tabId){
+  document.querySelectorAll(".tabcontent").forEach(t=>t.style.display="none");
+  document.querySelectorAll(".tablinks").forEach(b=>b.classList.remove("active"));
+  document.getElementById(tabId).style.display="block";
+  evt.currentTarget.classList.add("active");
+}
+
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el=>{
+  new bootstrap.Popover(el,{html:true});
+});
+
+function openReportModal(){
+  bootstrap.Modal.getOrCreateInstance(
+    document.getElementById("reportModal")
+  ).show();
+}
+
+
+
+function deletePost(){
+  document.getElementById("myPost").remove();
+}
+</script>
+	
+<script>
+let postTextRef;
+
+function editPost(){
+  postTextRef = document.getElementById("postText");
+
+  // Pasa el texto actual al textarea pq si
+  document.getElementById("editText").value = postTextRef.textContent;
+
+  // Abre el modal este lol
+  bootstrap.Modal.getOrCreateInstance(
+    document.getElementById("editModal")
+  ).show();
+}
+
+function saveEdit(){
+  const newText = document.getElementById("editText").value;
+
+  if(newText.trim() !== ""){
+    postTextRef.textContent = newText;
+  }
+
+  bootstrap.Modal.getInstance(
+    document.getElementById("editModal")
+  ).hide();
+}
+</script>
+	
+<script>
+function sendComment(){
+  const input = document.getElementById("newCommentText");
+  const text = input.value.trim();
+  if(text === "") return;
+
+  const container = document.getElementById("comments");
+
+  const comment = document.createElement("div");
+  comment.className = "comment yellow";
+  comment.innerHTML = `
+    <div class="row align-items-center">
+      <div class="col-auto">
+        <img src="img/pfp.jpg" class="avatar">
+      </div>
+      <div class="col">
+        <strong>Tú</strong><br>
+        <small>Ahora</small>
+        <div class="comment-stars red">
+          ${'<i class="fa-solid fa-star"></i>'.repeat(5)}
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-2">${text}</p>
+  `;
+
+  container.insertBefore(comment, container.firstChild);
+  input.value = "";
+}
+</script>
+	
+	<script>
+function toggleReply(btn){
+  btn.nextElementSibling.classList.toggle("d-none");
+}
+
+function sendReply(btn){
+  const box = btn.parentElement;
+  const input = box.querySelector("input");
+  if(input.value.trim() === "") return;
+
+  const reply = document.createElement("p");
+  reply.className = "reply-text";
+  reply.textContent = "Tú: " + input.value;
+
+  box.parentElement.appendChild(reply);
+  input.value = "";
+  box.classList.add("d-none");
+}
+</script>
+
+
+
+</body>
+</html>
+

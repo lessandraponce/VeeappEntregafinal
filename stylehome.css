@@ -1,0 +1,331 @@
+:root {
+  --color-bg: #f7efd2;
+  --color-primary: #e6925c;
+  --color-secondary: #c95e42;
+  --color-accent: #c85f44;
+  --color-soft-border: #f2d5b8;
+  --color-terror: #651c1c;
+  --color-fantasia: #4a6d64;
+  --color-scifi: #2e4b5c;
+  --text-dark: #5a3a34;
+  --text-light: #ffffff;
+  --search-bg: #e4d6cc;
+  --menu-icon-size: 32px;
+  --rounded-big: 25px;
+  --rounded-medium: 20px;
+  --font-main: Arial, sans-serif;
+  --font-logo: "Georgia", serif;
+}
+
+
+
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;               /* distancia desde abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #e89230;        /* color de tu barra */
+    padding: 15px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* --- LINKS DEL NAV --- */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* --- ICONOS DEL NAV --- */
+.nav-item i {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+body {
+  margin: 0;
+  background: #f7efd2;
+  font-family: Arial;
+	  padding-bottom: 120px;
+}
+
+/* Barra superior */
+.vee-nav {
+  background: #e89230;
+  padding: 12px 15px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Avatar */
+.vee-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* Logo */
+.vee-logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-left: 10px;
+  flex-grow: 1;
+  font-family: "Georgia", serif;
+}
+
+/* Botón hamburguesa */
+.vee-toggler {
+  border: none;
+  background: transparent;
+}
+
+.vee-menu-icon {
+  font-size: 32px;
+  color: white;
+}
+
+/* Offcanvas estilo */
+.vee-offcanvas {
+  background: #f7efd2;
+}
+
+/* Search bar estilo de la imagen */
+.search-bar {
+  width: 100%;
+  background: #e4d6cc;
+  border-radius: 20px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-icon {
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+/* Links */
+.nav-link {
+  font-size: 18px;
+  color: #5a3a34 !important;
+  margin-bottom: 8px;
+}
+
+
+
+.topbar {
+  background: #e89230;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logo {
+  font-size: 26px;
+}
+.menu-icon {
+  font-size: 28px;
+}
+
+
+
+.search-bar {
+  width: 90%;
+  margin: 20px auto;
+  background: #e4d6cc; /* color similar al de la imagen */
+  border-radius: 20px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-icon {
+  font-size: 18px;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+
+.section-title {
+  background: #c95e42;
+  color: white;
+  text-align: center;
+  margin: 15px auto;
+  padding: 8px 20px;
+	margin-top: 80px;
+  width: fit-content;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+
+/* Contenedor general del carrusel */
+#carouselExample {
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* Tarjeta redondeada */
+.card-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 6px solid #f2d5b8;
+}
+
+/* Imagen */
+.slide-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* CONTENIDO DENTRO DE LA IMAGEN */
+.slide-content {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: white;
+  width: 70%;
+}
+
+.slide-content h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.slide-content p {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.stars {
+  font-size: 14px;
+}
+
+/* Botón "Leer" */
+.read-btn {
+  background: #c85f44;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Indicadores (puntitos) */
+.carousel-indicators {
+  bottom: -15px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  background-color: #c85f44;
+  opacity: 1;
+}
+
+/* Flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+}
+
+
+
+
+.card-text button {
+  float: right;
+}
+
+.category {
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.terror { background: #651c1c; }
+.fantasia { background: #4a6d64; }
+.scifi { background: #2e4b5c; }
+
+.more-btn {
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #5e4747;
+  color: white;
+}
+
+.community-card {
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}
+.community-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.join-btn {
+  background: #8f3b3b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+

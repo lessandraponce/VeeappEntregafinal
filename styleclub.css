@@ -1,0 +1,176 @@
+
+
+:root{
+  --bg:#fbf8e5;
+  --primary:#c45a3a;
+  --muted:#bfa6d8;
+  --card1:#c05a38;
+  --card2:#b9a0c9;
+}
+
+*{box-sizing:border-box}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;               /* distancia desde abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #e89230;        /* color de tu barra */
+    padding: 15px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* --- LINKS DEL NAV --- */
+.nav-item {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* --- ICONOS DEL NAV --- */
+.nav-item i {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+
+
+body{
+  margin:0;
+  background:var(--bg);
+  font-family:'Inter',sans-serif;
+}
+
+.hero img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.content{
+  padding:18px 16px 30px;
+}
+
+.tag{
+  background:#e6d6f2;
+  color:#7a5e95;
+  padding:4px 10px;
+  border-radius:12px;
+  font-size:12px;
+}
+
+.title-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+}
+
+.back{
+  font-size:26px;
+  color:var(--primary);
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  color:var(--primary);
+  margin:0;
+}
+
+.members{
+  color:#777;
+  font-size:14px;
+  margin:6px 0;
+}
+
+.description{
+  font-size:14px;
+  color:#555;
+  line-height:1.4;
+}
+
+.join-btn{
+  margin:14px auto 18px;
+  display:block;
+  background:#e39b4a;
+  color:#fff;
+  border:none;
+  padding:10px 28px;
+  border-radius:22px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.join-btn.joined{
+  background:#9fc48c;
+}
+
+.active-members{
+  background:#f1eddc;
+  padding:12px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.avatars{
+  display:flex;
+}
+
+.avatars img{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  border:2px solid #f1eddc;
+  margin-left:-6px;
+}
+
+.avatars.small img{
+  width:26px;
+  height:26px;
+}
+
+.card{
+  display:flex;
+  align-items:center;
+  border-radius:18px;
+  padding:16px;
+  color:#fff;
+  margin-bottom:14px;
+}
+
+.chat{background:var(--card1)}
+.reading{background:var(--card2)}
+
+.card-left{
+  margin-right:16px;
+  text-align:center;
+}
+
+.count{
+  font-size:26px;
+  font-weight:600;
+}
+
+.card-right h2{
+  margin:0 0 6px;
+  font-size:16px;
+}
+
+.arrow{
+  margin-left:auto;
+  font-size:22px;
+}

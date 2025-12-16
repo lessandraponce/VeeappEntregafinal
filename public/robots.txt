@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://vee-ana-y-les-b5jlun.teleporthq.app/sitemap.xml
